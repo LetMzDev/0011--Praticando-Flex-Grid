@@ -17,6 +17,20 @@
 	grid-row: 2/4;
 }
 
+/* Eventos */
+
+.eventos__item
+{
+	display: grid;
+	grid-template-areas: 
+		"imagem imagem"
+		"nome nome"
+		"data data"
+		"local botao";
+}
+
+/* @ media TABLET */
+
 @media screen and (min-width: 720px)
 {
 	/* Banner */
