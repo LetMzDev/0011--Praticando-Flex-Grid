@@ -17,6 +17,18 @@
 	row-gap: 0.5rem;
 }
 
+.destaques
+{
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.destaques__barra
+{
+	flex-grow: 1; /* Faz a Barra crescer e diminuir de acordo com a largura da tela */
+}
+
 /* @ media TABLET */
 
 @media screen and (min-width: 720px)
