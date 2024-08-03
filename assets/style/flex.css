@@ -7,6 +7,15 @@
 	column-gap: 33px;
 }
 
+.categorias__lista
+{
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+/* @ media TABLET */
+
 @media screen and (min-width: 720px)
 {
 	.menu
