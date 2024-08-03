@@ -10,12 +10,15 @@
 }
 
 /* Categorias*/
+
 .categorias__lista
 {
 	display: flex;
 	flex-direction: column;
 	row-gap: 0.5rem;
 }
+
+/* Destaques */
 
 .destaques
 {
@@ -26,7 +29,24 @@
 
 .destaques__barra
 {
-	flex-grow: 1; /* Faz a Barra crescer e diminuir de acordo com a largura da tela */
+	flex-grow: 1; /* Faz a Barra crescer e diminuir de acordo com a largura da tela. Utilizada para expandir elementos de acordo com o espaço disponível em um flex-container */
+}
+
+/* Eventos */
+
+.eventos__lista
+{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 1.5rem;
+	row-gap: 1rem;
+	justify-content: center;
+}
+
+.eventos__item
+{
+	flex-grow: 1;
+	max-width: 400px;
 }
 
 /* @ media TABLET */
@@ -34,17 +54,26 @@
 @media screen and (min-width: 720px)
 {
 	/* Cabeçalho */
+
 	.menu
 	{
 		column-gap: 75px;
 	}
 
 	/* Categorias*/
+
 	.categorias__lista
 	{
 		flex-wrap: wrap;
 		column-gap: 1.5rem;
 		row-gap: 1rem;
+	}
+
+	/* Eventos */
+
+	.eventos__lista
+	{
+		justify-content: end;
 	}
 }
 
@@ -53,6 +82,7 @@
 @media screen and (min-width: 1440px)
 {
 	/* Cabeçalho */
+
 	.menu
 	{
 		column-gap: 105px;
